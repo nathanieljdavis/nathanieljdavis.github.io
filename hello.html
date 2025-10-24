@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <!--The above prevents fixed-width shrinking-->
+        <meta name="author" content="Nathaniel J. Davis">
+        <meta name="description" content="Nathaniel J. Davis' Academic Website">
+        <link href="style.css" rel="stylesheet" />
+        <!--For Custom CSS Styling-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Red+Hat+Mono:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+        <!--For Custom Font, RedHat Display-->
+        <script async src="index.js"></script>
+        <!--For interactivity on the Home page-->
+        <title> NJDavis </title>
+        <!--jsPsych Hello World!-->
+        <script src="https://unpkg.com/jspsych@7.3.4"></script>
+        <script src="https://unpkg.com/@jspsych/plugin-html-button-response@1.1.0"></script>
+        <link href="https://unpkg.com/jspsych@7.3.4/css/jspsych.css" rel="stylesheet" type="text/css" />
+  <body></body>
+  <script>
+    const jsPsych = initJsPsych();
+
+    const helloWorld = {
+    type: jsPsychHtmlButtonResponse,
+    stimulus: '<p style="color: #c6432f">Hello World!</p>',
+    choices: ['Click to go Home'],
+    on_finish: function() {
+      // Redirect to another webpage
+      window.location.href = "index.html";
+    }
+    };
+
+    jsPsych.run([helloWorld]);
+  </script>
+</html>
