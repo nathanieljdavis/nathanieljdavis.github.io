@@ -2,39 +2,166 @@
 <html lang="en-US">
     <head>
         <meta charset="utf-8" />
+        <!-- Prevents fixed-width shrinking -->
         <meta name="viewport" content="width=device-width" />
-        <!--The above prevents fixed-width shrinking-->
+
         <meta name="author" content="Nathaniel J. Davis">
         <meta name="description" content="Nathaniel J. Davis' Academic Website">
+        <!-- For CSS Styling -->
         <link href="style.css" rel="stylesheet" />
-        <!--For Custom CSS Styling-->
+        <!-- For Custom Font, Red Hat Display -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Red+Hat+Mono:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
-        <!--For Custom Font, RedHat Display-->
-        <script async src="index.js"></script>
-        <!--For interactivity on the Home page-->
-        <title> NJDavis </title>
+        <!-- For interactivity functions -->
+        <script async src="script.js"></script>
+        <title> njdavis </title>
     </head>
     <body>
-        <header>
-        <nav><a href="index.html">HOME</a> │ <a href="posters.html">POSTERS & PUBS</a> | <a href="apa.html">CSCI 5250</a> | <a href="hello.html">Hello World</a></nav> <!--│ <a href="#RESEARCH">ACTIVE RESEARCH</a> │ <a href="#GRAPHICS">GRAPHICS</a> -->
-        </header>
-        <br>
-        <main>
-            <h1>Nathaniel J. Davis, B.S.</h1>
-            <u><h2>Cognitive Psychology</h2></u><br>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#featured">Featured</a></li>
+      <li><a href="#bibliography">Publications</a></li>
+      <li><a href="#photos">Photos</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-            <img src="images/ndavis.jpeg" alt="I DON'T KNOW WHERE IT IS... ¯\_(ツ)_/¯"/></img>
-            <p><a href="mailto:njdavis@nmsu.edu">Email Me</a></p>
-            <p><a href="documents/cv-ndavis_2025-09-06.pdf" target="_blank">Download CV</a></p><br>
-            
-            <h2>Research Interests</h2>
-            <p>I have an overarching insterest in Cognitive Psychology, but I prioritize work involved in psychometrics, attention, & statistical methodology.
-            I have also conducted some research in Social Psychology, with an emphasis on parasocial relationships in digital environments.
-            </p>
-        </main>
-        <footer>
-        </footer>
-    </body>
+  <!-- Colored Viewport Border -->
+  <div class="viewport-border"></div>
+
+  <!-- Sections -->
+  <section id="home" class="section home">
+    <h1>Home</h1>
+    <div class="section-content">
+      <div class="image-text">
+        <img src="images/ndavis.jpeg" alt="Author portrait or book cover">
+        <div class="text">
+          <h2>Nathaniel J. Davis</h2>
+          <ul>
+            <li>I have an overarching insterest in Cognitive Psychology, but I prioritize work involved in psychometrics, attention, & statistical methodology.</li>
+            <li>I have also conducted some research in Social Psychology, with an emphasis on parasocial relationships in digital environments.</li>
+          </ul>
+          <br>
+          <button><a href="documents/cv-ndavis_2025-09-06.pdf" target="_blank"> Curriculum Vitae </a></button>
+          <button><a href="hello.html"> Hello World! </a></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="featured" class="section featured">
+    <h1>Featured</h1>
+    <div class="section-content">
+      <p>Welcome to the featured page! Here is some sample text to get started.</p>
+    </div>
+  </section>
+
+  <section id="bibliography" class="section bibliography">
+    <h1>Publications & Presentations</h1>
+    <div class="section-content">
+      <p><b>Davis, N.J.</b>, Conway, A.R.A., Pathare, M., Bauer, K. (2025, November 20—23). <i>The Assessment of Individual Differences in Attention Control is... Complex </i> [Poster presentation]. Psychonomic Society 66th Annual Meeting, Denver, CO, USA. 
+        <a href="documents/posters/251121-ps_ii-010.pdf" target="_blank">PDF</a></p><br>
+      <p><b>Davis, N.J.</b> (2025, May 2). <i>First Year Project, Report #2: Psychometrics of Attention Control</i> [Colloquium presentation]. New Mexico State University Department of Psychology Colloquium, Las Cruces, NM, USA. 
+      </p><br>
+      <p><b>Davis, N.J.</b> (2025, April 15). <i>Applying Psychology to Graphic Design</i> [Guest lecture]. PSYC-430 (Human-Computer Psychology), P.I.: Jeffery Hartley. New Mexico State University, Las Cruces, NM, USA. 
+      </p><br>
+      <p><b>Davis, N.J.</b>, Hand, M.M., Hinton, A., Lee, A., Montes, A. (2025, March 28—30). <i>Breaking a Sweat in VR: What Changes When "Gaming" Becomes Active</i> [Poster presentation]. 2025 Southwestern Psychological Association Convention, Little Rock, AR, USA. 
+        <a href="documents/posters/250329-swpa_cogmem-022.pdf" target="_blank">PDF</a></p><br>
+      <p><b>Davis, N.J.</b> (2024, December 2). <i>First Year Project, Report #1</i> [Colloquium presentation]. New Mexico State University Department of Psychology Colloquium, Las Cruces, NM, USA. 
+      </p><br>
+      <p>Alas., K, Davis, K., <b>Davis, N.J.</b>, Temples, C., Hand, M.M. (2024, March 28—30). <i>Examining the Characteristics That Influence the Desire to Engage in Parasocial Relationships</i> [Poster presentation]. 2024 Southwestern Psychological Association Convention San Antonio, TX, USA. 
+        <a href="documents/posters/240329-swpa_socpsy-210.pdf" target="_blank">PDF</a></p><br>
+      <p><b>Davis, N.J.</b>, Brown, J.C. (2024, March 28—30). <i>Validating the General Regulation Scale Using the Subcomponents of Regulation</i> [Poster presentation]. 2024 Southwestern Psychological Association Convention San Antonio, TX, USA. 
+        <a href="documents/posters/240330-swpa_socpsy-310.pdf" target="_blank">PDF</a></p><br>
+      <p><b>Davis, N.J.</b>, Brown, J.C. (2023, April 25). <i>Validation of a General Regulation Scale</i> [Conference session]. 2023 Texas Wesleyan University College Day Annual Conference, Fort Worth, TX, USA. 
+      </p>
+    </div>
+  </section>
+
+  <section id="photos" class="section photos">
+    <h1>Photos</h1>
+    <div class="section-content">
+      <div class="photo" data-caption="Colors for NMSU">
+        <img src="images/nmsu_colors.png" alt="Colors for NMSU">
+      </div>
+      <div class="photo" data-caption="Nathaniel standing by his poster.">
+        <img src="images/PS_1.jpeg" alt="Nathaniel standing by his poster.">
+      </div>
+      <div class="photo" data-caption="Colors for Theme"> <!-- data-caption and alt must be the same for overlay -->
+        <img src="images/apa_colors.png" alt="Colors for Theme">
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section projects">
+    <h1>Projects</h1>
+    <div class="section-content">
+      <h2>CSCI-5250 Project: APA 7 Website Theme</h2>
+      <p>As part of a class project, I was tasked with creating a website theme <i>loosely</i> based on the 7th edition of the Amercan Psychological Association's style guidleines.
+        Though a long process, the results of that assignment led to the website you are currently viewing.</p><br>
+        <p>The concept of the project started with <i>three core requirements</i>:</p>
+        <ol>
+          <li>To meet user expectations, This CSS theme will prioritize readability, clear information hierarchy, and APA 7-aligned formatting, using accessible font choices, proper spacing, and consistent typography to ensure content is easy to consume. The layout will support standard academic website sections (e.g., CV, research, bio, contact), using responsive design and semantic HTML to ensure usability across devices and assistive technologies. Visually, the theme will adopt APA's minimalist aesthetic while ensuring sufficient color contrast and offering both light and dark modes to meet accessibility standards and user preferences. To support users with minimal technical experience, I will attempt to make the theme “plug-and-play”. Finally, the theme will include built-in support for APA 7 citation and reference formatting, along with optional styles for block quotes, figures, and tables, reinforcing the academic credibility of the site.</li>
+          <br><li>The primary users are academic professionals (e.g., psychology faculty, graduate students) with varying levels of technical experience. Many users will have minimal web development knowledge, so the theme must be easy to implement, customize, and maintain without requiring advanced coding skills. Should also be accessible, meeting at least WCAG AA standards for color contrast and keyboard navigation. </li>
+          <br><li>The theme must be visually clean, lightweight, and load quickly. It must prioritize accessibility, readability, and aesthetic consistency aligned with APA 7. The project must work across modern browsers (Chrome, Firefox, Safari, Edge) and support desktop and mobile platforms. Since it's a CSS theme, it should be memory-efficient and have no significant processing demands. Networking is minimal or non-existent, as the theme is designed for static websites. There are no external dependencies beyond standard HTML and CSS, which helps ensure broad compatibility and fast load times.</li>
+        </ol>
+        <br><h3>Initial Prototype</h3>
+        <div class="image-text">
+          <img src="images/CSCI-Project/apa-v1.png" alt="Original Version of the theme.">
+          <div class="text">
+            In complete honesty, I had no idea where to begin with my project. I had some previous experience with HTML and JavaScript, but not in the context of website design. 
+            The best I was able to intially put together was the figure visible on the left: it was bad.
+          </div>
+        </div>
+        <br><h3>User Study 1</h3>
+        <div class="image-text">
+          <img src="images/CSCI-Project/bar-plots.png" alt="Data from first study.">
+          <div class="text">
+            This study developed two functioning prototypes of online academic portfolios, styled to meet style guidelines set by the 7th Publication Manual of the APA (2020), that differ in their display functionality to determine what a focus-group of academics believed to be better.
+            <br><br>There was no significant preference for one website over the other (see left). This was not surprising, however, as the design of the two websites were identical except for the primary navigation function. 
+            Participants took longer to complete four timed tasks on one version of the website (see right), 3 of those were significantly different at a <i>p</i> < 0.001 using <i>t</i>-test comparisons.
+          </div>
+        </div>
+        <br><h3>User Study 2</h3>
+        <div class="image-text">
+          <img src="images/CSCI-Project/bar-plots2.png" alt="Data from second study.">
+          <div class="text">
+            This study compared the preferred website version from the previous study to an existing academic's personal website. The aim of this study was to determine if standardization of the site was preferred by participants, as compared to an unstandardized one. All information on each website was made to be identiacal.
+            <br><br>Participants in this sample had a significantly greater liking towards the standardized website [<i>t</i>(10) = -18.472, <i>p</i> < 0.001], see the left figure. 
+            They also took significantly less time to complete 4 timed tasks on the standardized compared to the existing website (see right).
+          </div>
+        </div>
+      <br><h2>Conclusions</h2>
+      <p>The results of this assignment have led to the page(s) you are viewing now.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h1>Contact</h1>
+    <div class="section-content">
+      <h2><a href="mailto:njdavis@nmsu.edu">Email Me</a></h2>
+      <p>Want to reach out? Please use the form to create the subject-line of your email.</p>
+      <div class="contact-form">
+        <label>First Name:</label>
+        <input type="text" id="firstName">
+        <label>Last Name:</label>
+        <input type="text" id="lastName">
+        <label>Topic:</label>
+        <input type="text" id="topic">
+        <label>Affiliation:</label>
+        <input type="text" id="affiliation">
+        <button class="copy-btn" onclick="copyToClipboard()">Copy to Clipboard</button>
+        <div id="popup" class="popup">Copied to clipboard!</div>
+      </div>
+    </div>
+  </section>
+
+</body>
 </html>
+
+
+<!-- <p><a href="documents/cv-ndavis_2025-09-06.pdf" target="_blank">Download CV</a></p><br> -->
